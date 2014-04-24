@@ -94,7 +94,7 @@ your order.
 def payment
   @order = Shoppe::Order.find(session[:current_order_id])
   if request.post?
-    if @order.accept_stripe_token(params[:stripe_token])
+    if @order::accept_stripe_token(params[:stripe_token])
       redirect_to checkout_confirmation_path
     else
       flash.now[:notice] = "Could not exchange Stripe token. Please try again."
