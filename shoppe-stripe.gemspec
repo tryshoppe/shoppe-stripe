@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency "shoppe", "~> 0.0.9"
+  s.add_dependency "shoppe", "> 0.0.9", "< 1.1.0"
   s.add_dependency "stripe", "~> 1.8.7"
   s.add_dependency "coffee-rails", "~> 4.0.0"
 end
